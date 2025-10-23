@@ -1,15 +1,15 @@
 # SITE CONFIGURATION
-url: "https://hanaedonnelly.github.io"
-baseurl: "Band-Theme"
+url: ""
+baseurl: ""
 
 # THEME-SPECIFIC CONFIGURATION
-title: My Band
-description: "The official website of My Band"
+title: Wildest Dreams
+description: "The official website of Wildest Dreams (Charleston's unofficial Taylor tribute)"
 avatar: # Empty for no avatar in navbar
 favicon: #"assets/favicon.png"
 
 # Header and footer text
-header_text: "My Band"
+header_text: "Wildest Dreams"
 header_feature_image: "assets/img/feature-img/stage.jpg"
 header_feature_image_responsive: true
 footer_text: 
