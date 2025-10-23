@@ -1,0 +1,25 @@
+{% assign now = 'now' | date: "%s" %}
+{% assign next_show = null %}
+{% assign sorted_shows = site.shows | sort: "date" %}
+
+{% for show in sorted_shows %}
+  {% assign show_date = show.date | date: "%s" %}
+  {% if show_date > now %}
+    {% assign next_show = show %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if next_show %}
+<div class="posts">
+  <div class="post-teaser" id="next-show">
+    <h2 id="h2-next-show">Upcoming Show</h2>
+    <ul id="ul-next-show">
+      <li>
+        <p><b>{{ next_show.date | date: "%B %d - %I:%M %p" }}</b></p><br>
+        <p>{{ next_show.location }}</p>
+      </li>
+    </ul>
+  </div>
+</div>
+{% endif %}

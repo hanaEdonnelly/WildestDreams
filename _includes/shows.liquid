@@ -1,0 +1,19 @@
+{% assign sorted_shows = site.shows | sort: 'date' %}
+<ul class="show-list">
+  {% assign now = 'now' | date: '%s' %}
+  {% for show in sorted_shows %}
+    {% assign show_time = show.date | date: '%s' %}
+    {% if show_time > now %}
+      <li class="show-card">
+        <h2>{{ show.date | date: "%B %d, %-I:%M %p" }} | {{ show.location }}</h2>
+        {% if show.tickets %}
+          <p>
+            <a class="button-inverse" href="{{ show.tickets }}" target="_blank" rel="noopener noreferrer">
+            Buy Tickets
+          </a>
+          </p>
+        {% endif %}
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
