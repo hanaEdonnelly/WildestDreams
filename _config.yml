@@ -48,6 +48,8 @@ collections:
   shows: 
     output: true
     permalink: /shows/:name
+  members:
+    output: true
 
 # BUILD SETTINGS
 sass:

@@ -1,0 +1,8 @@
+<ul class="show-list">
+  {% for member in site.members %}
+    <li class="show-card">
+        <h2>{{ member.title }} | {{ member.position }}<br></h2>
+        <p>About: {{ member.fact }}</p>
+    </li>
+  {% endfor %}
+</ul>
