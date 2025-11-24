@@ -1,7 +1,7 @@
 ---
-title: Kristen
+title: Kristen Stewart
 position: Drums
-order: 
+order: 3
 feature-img:
 fact: 
 ---

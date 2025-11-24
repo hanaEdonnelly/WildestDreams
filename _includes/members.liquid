@@ -1,8 +1,12 @@
 <ul class="show-list">
-  {% for member in site.members %}
+{% assign sorted_members = site.members | sort: "order" %}
+  {% for member in sorted_members %}
     <li class="show-card">
+    {% if member.featureimg %}
+        <img src="{{ member.featureimg | relative_url }}" alt=" {{ member.title }}" >
+    {% endif %}
         <h2>{{ member.title }} | {{ member.position }}<br></h2>
-        <p>About: {{ member.fact }}</p>
+        <p>{{ member.fact }}</p>
     </li>
   {% endfor %}
 </ul>

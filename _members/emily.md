@@ -1,7 +1,7 @@
 ---
 title: Emily
 position: Vocals
-order: 
+order: 2
 feature-img:
 fact: 
 ---

@@ -1,7 +1,7 @@
 ---
-title: Hana
+title: Hana Donnelly
 position: Bass
-order: 
+order: 3
 feature-img:
 fact: 
 ---

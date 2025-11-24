@@ -1,7 +1,7 @@
 ---
-title: Archer
+title: Lee Archer
 position: Guitar
-order: 
+order: 2
 feature-img:
 fact: 
 ---
