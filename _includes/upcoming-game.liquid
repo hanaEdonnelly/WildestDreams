@@ -18,6 +18,11 @@
       <li>
         <p><b>{{ next_show.date | date: "%B %d - %I:%M %p" }}</b></p><br>
         <p>{{ next_show.location }}</p>
+        {% if next_show.tickets %}
+        <div class="button-container" id="home-ticket-button">
+          <a href="{{ next_show.tickets }}" class="button">Tickets</a>
+        </div>
+        {% endif %}
       </li>
     </ul>
   </div>
