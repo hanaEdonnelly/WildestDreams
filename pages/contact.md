@@ -7,7 +7,7 @@ description:
 position: 2
 ---
 <div class="button-container">
-    <a href="mailto:wildestdreamstribute@gmail.com" class="button-inverse">Book Wildest Dreams</a>
+    <a href="mailto:wildestdreamstribute@gmail.com" class="button-inverse">Contact Us</a>
 </div>
 <br>
 Looking to have an enchanted wedding, party, or event? Let us make your event unforgettable.
