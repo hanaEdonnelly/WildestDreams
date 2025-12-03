@@ -9,4 +9,5 @@ Wildest Dreams is Charleston's unofficial Taylor Swift tribute band. We bring hi
 
 Our members value professionalism and strive to make working with us smooth and stress-free. Let us help you make the event of your wildest dreams... are you ready for it?
 
+## Core lineup
 {% include members.liquid %}
