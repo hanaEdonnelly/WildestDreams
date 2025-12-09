@@ -6,10 +6,20 @@
     {% if show_time > now %}
       <li class="show-card">
         <h2>{{ show.date | date: "%B %d, %-I:%M %p" }} | {{ show.location }}</h2>
+        {% if show.img %}
+        <img src="{{ show.img }}">
+        {% endif %}
         {% if show.tickets %}
           <p>
             <a class="button-inverse" href="{{ show.tickets }}" target="_blank" rel="noopener noreferrer">
             Tickets
+          </a>
+          </p>
+        {% endif %}
+        {% if show.info %}
+          <p>
+            <a class="button-inverse" href="{{ show.info }}" target="_blank" rel="noopener noreferrer">
+            Info
           </a>
           </p>
         {% endif %}
