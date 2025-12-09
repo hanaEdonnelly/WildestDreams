@@ -1,27 +1,28 @@
-<ul>
-    <!-- Facebook Icon -->
+{% for item in site.data.social %}
+  {% assign key = item[0] %}
+  {% assign value = item[1] %}
+  {% if value %}
     <li>
-        <a href="https://www.facebook.com/"
-           title="Follow us on Facebook" 
-           target="https://www.facebook.com/61577988302932" 
-           rel="noopener">
-            <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-            </span>
-        </a>
+      {% assign url = "" %}
+      {% case key %}
+        {% when "facebook" %}{% assign url = "https://www.facebook.com/" | append: value %}
+        {% when "instagram" %}{% assign url = "https://www.instagram.com/" | append: value %}
+        {% when "github" %}{% assign url = "https://github.com/" | append: value %}
+        {% when "mail" %}{% assign url = "mailto:" | append: value %}
+        {% when "twitter" %}{% assign url = "https://twitter.com/" | append: value %}
+        {% when "youtube" %}{% assign url = "https://www.youtube.com/" | append: value %}
+        {% when "rss" %}{% assign url = "/feed.xml" %}
+      {% endcase %}
+      <a href="{{ url }}" target="_blank" rel="noopener" title="Follow us on {{ key | capitalize }}">
+        <span class="fa-stack fa-lg">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          {% if key == "mail" %}
+            <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+          {% else %}
+            <i class="fab fa-{{ key }} fa-stack-1x fa-inverse"></i>
+          {% endif %}
+        </span>
+      </a>
     </li>
-    <!-- Instagram Icon 
-    <li>
-        <a href="https://www.instagram.com/" 
-           title="Follow us on Instagram" 
-           target="_blank" 
-           rel="noopener">
-            <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
-            </span>
-        </a>
-    </li>-->
-</ul>
-
+  {% endif %}
+{% endfor %}
