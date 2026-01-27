@@ -1,0 +1,12 @@
+{% assign sorted_shows = site.shows | sort: 'date' | reverse %}
+<ul class="show-list">
+  {% assign now = 'now' | date: '%s' %}
+  {% for show in sorted_shows %}
+    {% assign show_time = show.date | date: '%s' %}
+    {% if show_time < now %}
+      <li class="show-card">
+        <h2>{{ show.date | date: "%B %d, %Y %-I:%M %p" }} | {{ show.location }}</h2>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
