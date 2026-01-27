@@ -7,3 +7,12 @@ description: A list of our upcoming shows, including dates, locations, and ticke
 ---
 
 {% include shows.liquid %}
+
+<br>
+<div class="button-container">
+    <a class="button-inverse" onclick="document.getElementById('past-shows').style.display='block'">View Past Shows</a>
+</div>
+
+<div id="past-shows" style="display:none; margin-top: 2rem;">
+    {% include past-shows.liquid %}
+</div>
