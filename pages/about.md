@@ -6,7 +6,7 @@ description:
 position: 3
 ---
 
-![alt](assets/img/pexels/2026-01-01 Pub 61 .jpg)
+![alt](assets/img/pexels/2026-01-01 Pub 61.jpg)
 
 Wildest Dreams is Charleston's unofficial Taylor Swift tribute band. We bring high-energy entertainment with a diverse mix of all eras of Taylor's music that audiences know all too well. Our setlist transports audience members back to their front-row seat at the Eras tour, a first dance with their "Lover," and summer nights listening to "Our Song." 
 
